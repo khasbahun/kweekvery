@@ -6,7 +6,9 @@ A fully functioning simple and small website for online grocery delivery with ad
 
 Admin Features:
 1. Can Add and Remove Products, Prices, Images and Discount
-2. View Orders of Users
+2. Add or remove product category
+3. View Orders and Users
+4. Download Product, Users and Categories as PDF
 
 User:
 1. If registered can view order history
