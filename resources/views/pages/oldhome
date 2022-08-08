@@ -1,0 +1,88 @@
+@extends('layouts.app')
+
+@section('stylesheets')
+
+	<link rel="stylesheet" type="text/css" href="css/new.css">
+	<style>
+	.categoryListBoxContents {
+  height: 150px;      /* equals max image height */
+  line-height: 100px;
+  width: 33%;
+  text-align: center;
+  float: left;
+}
+.categoryListBoxContents a img {
+  vertical-align: middle;
+  max-height: 250px;
+  max-width: 300px;
+}
+.cat-image-heading {
+  line-height: 20px;
+}
+.clear { clear: both; height: 50px; }
+	</style>
+
+@endsection
+
+@section('content')
+
+<marquee behavior="scroll" direction="left"><p style="color:white;font-size:17px;"><span style="color:red;">{{ $message }}</span></p></marquee>
+<hr/>
+<div class="centerColumn" id="indexCategories">
+
+
+
+
+<div class="categoryListBoxContents" style="width:50%;">
+    <a href="/offers">
+      <img src="/public/img/category/offer.jpg" alt="sale"  width="80%" height="80%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Sale</p></div>
+    </a>
+  </div>
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/1/vegetables">
+      <img src="/public/img/category/vege.jpg" alt="Vegetables"  width="80%" height="80%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Vegetables</p></div>
+    </a>
+  </div>
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/3/fruits">
+      <img src="/public/img/category/fruits.jpg" alt="Fruits"  width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Fruits</p></div>
+    </a>
+  </div>
+  
+<br class="clearBoth">
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/2/Dairy">
+      <img src="/public/img/category/dairy.jpg" alt="Dairy"   width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Dairy</p></div>
+    </a>
+  </div>
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/5/meat">
+      <img src="/public/img/category/meat.jpg" alt="Meat" width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Meat</p></div>
+    </a>
+  </div>
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/13/Grocery">
+      <img src="/public/img/category/grocery.jpg" alt="Grocery"  width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Grocery</p></div></a></div>
+<br class="clearBoth">
+
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="category/4/other-essentials">
+      <img src="/public/img/category/other.jpg" alt="Other Essentials"  width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Other Essentials</p></div>
+    </a>
+  </div>
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/10/Pickles">
+      <img src="/public/img/category/pickle.jpg" alt="Pickles"  width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Pickles</p></div></a></div>
+  &nbsp;
+  </div>
+  <div class="categoryListBoxContents" style="width:50%;">
+    <a href="/category/11/indoors-plants-and-flowers">
+      <img src="/public/img/category/plants.jpg" alt="Plants" width="50%" height="90%"><div class="cat-image-heading"><p style="color:black;font-size:16px;">Flowers & Plants</p></div>
+    </a>
+  </div>
+<br class="clear">
+
+
+</div>
+		
+@endsection
